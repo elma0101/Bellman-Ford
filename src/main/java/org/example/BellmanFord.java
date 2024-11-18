@@ -68,7 +68,7 @@ public class BellmanFord {
         for (int u = 0; u < nbSommets; u++) {
             for (int v = 0; v < nbSommets; v++) {
                 if (graph[u][v] != INFINI && distance[u] + graph[u][v] < distance[v]) {
-                    System.out.println("Le graphe contient un cycle absorbant.");
+                    System.out.println("\t\t\t\t\t\t\t\t\t\t\t\tLe graphe contient un cycle absorbant.");
                     return;
                 }
             }
